@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1300BC227BAAFFC005CDD06 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1300BC127BAAFFC005CDD06 /* Tests_iOS.swift */; };
+		A1300BC427BAAFFC005CDD06 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1300BC327BAAFFC005CDD06 /* Tests_iOSLaunchTests.swift */; };
+		A1300BCE27BAAFFC005CDD06 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1300BCD27BAAFFC005CDD06 /* Tests_macOS.swift */; };
+		A1300BD027BAAFFC005CDD06 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1300BCF27BAAFFC005CDD06 /* Tests_macOSLaunchTests.swift */; };
+		A1300BD127BAAFFC005CDD06 /* AzureIoTSwiftSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1300BA927BAAFFB005CDD06 /* AzureIoTSwiftSampleApp.swift */; };
+		A1300BD227BAAFFC005CDD06 /* AzureIoTSwiftSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1300BA927BAAFFB005CDD06 /* AzureIoTSwiftSampleApp.swift */; };
+		A1300BD327BAAFFC005CDD06 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1300BAA27BAAFFB005CDD06 /* ContentView.swift */; };
+		A1300BD427BAAFFC005CDD06 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1300BAA27BAAFFB005CDD06 /* ContentView.swift */; };
+		A1300BD527BAAFFC005CDD06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1300BAB27BAAFFC005CDD06 /* Assets.xcassets */; };
+		A1300BD627BAAFFC005CDD06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1300BAB27BAAFFC005CDD06 /* Assets.xcassets */; };
+		A1300BE627BAB3E5005CDD06 /* AzureIoTSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1300BE527BAB3E5005CDD06 /* AzureIoTSwiftViewController.swift */; };
+		A1300BE727BAB3E5005CDD06 /* AzureIoTSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1300BE527BAB3E5005CDD06 /* AzureIoTSwiftViewController.swift */; };
+		A1300BEA27BAB491005CDD06 /* AzureSDKForCSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A1300BE927BAB491005CDD06 /* AzureSDKForCSwift */; };
+		A1300BED27BAB52C005CDD06 /* MQTT in Frameworks */ = {isa = PBXBuildFile; productRef = A1300BEC27BAB52C005CDD06 /* MQTT */; };
+		A1300BF327BAF96E005CDD06 /* certs in Resources */ = {isa = PBXBuildFile; fileRef = A1300BF227BAF96E005CDD06 /* certs */; };
+		A1A4074427BDAA3000353276 /* DemoIoTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A4074327BDAA3000353276 /* DemoIoTClient.swift */; };
+		A1A4074527BDAA3000353276 /* DemoIoTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A4074327BDAA3000353276 /* DemoIoTClient.swift */; };
+		A1A4074827BDBCBD00353276 /* CAzureSDKForCSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A1A4074727BDBCBD00353276 /* CAzureSDKForCSwift */; };
+		A1A4074A27BDBF7300353276 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A4074927BDBF7300353276 /* config.swift */; };
+		A1A4074B27BDBF7300353276 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A4074927BDBF7300353276 /* config.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1300BBE27BAAFFC005CDD06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1300BA427BAAFFB005CDD06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1300BAF27BAAFFC005CDD06;
+			remoteInfo = "AzureIoTSwiftSample (iOS)";
+		};
+		A1300BCA27BAAFFC005CDD06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1300BA427BAAFFB005CDD06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1300BB527BAAFFC005CDD06;
+			remoteInfo = "AzureIoTSwiftSample (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A1300BA927BAAFFB005CDD06 /* AzureIoTSwiftSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureIoTSwiftSampleApp.swift; sourceTree = "<group>"; };
+		A1300BAA27BAAFFB005CDD06 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1300BAB27BAAFFC005CDD06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1300BB027BAAFFC005CDD06 /* AzureIoTSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzureIoTSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1300BB627BAAFFC005CDD06 /* AzureIoTSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzureIoTSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1300BB827BAAFFC005CDD06 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		A1300BBD27BAAFFC005CDD06 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1300BC127BAAFFC005CDD06 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		A1300BC327BAAFFC005CDD06 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		A1300BC927BAAFFC005CDD06 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1300BCD27BAAFFC005CDD06 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		A1300BCF27BAAFFC005CDD06 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		A1300BE527BAB3E5005CDD06 /* AzureIoTSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureIoTSwiftViewController.swift; sourceTree = "<group>"; };
+		A1300BF227BAF96E005CDD06 /* certs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = certs; sourceTree = "<group>"; };
+		A1A4074327BDAA3000353276 /* DemoIoTClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoIoTClient.swift; sourceTree = "<group>"; };
+		A1A4074927BDBF7300353276 /* config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1300BAD27BAAFFC005CDD06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1300BED27BAB52C005CDD06 /* MQTT in Frameworks */,
+				A1300BEA27BAB491005CDD06 /* AzureSDKForCSwift in Frameworks */,
+				A1A4074827BDBCBD00353276 /* CAzureSDKForCSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1300BB327BAAFFC005CDD06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1300BBA27BAAFFC005CDD06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1300BC627BAAFFC005CDD06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1300BA327BAAFFB005CDD06 = {
+			isa = PBXGroup;
+			children = (
+				A1300BF227BAF96E005CDD06 /* certs */,
+				A1300BA827BAAFFB005CDD06 /* Shared */,
+				A1300BB727BAAFFC005CDD06 /* macOS */,
+				A1300BC027BAAFFC005CDD06 /* Tests iOS */,
+				A1300BCC27BAAFFC005CDD06 /* Tests macOS */,
+				A1300BB127BAAFFC005CDD06 /* Products */,
+				A1A4074627BDBCBD00353276 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A1300BA827BAAFFB005CDD06 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A1300BA927BAAFFB005CDD06 /* AzureIoTSwiftSampleApp.swift */,
+				A1300BAA27BAAFFB005CDD06 /* ContentView.swift */,
+				A1300BAB27BAAFFC005CDD06 /* Assets.xcassets */,
+				A1300BE527BAB3E5005CDD06 /* AzureIoTSwiftViewController.swift */,
+				A1A4074327BDAA3000353276 /* DemoIoTClient.swift */,
+				A1A4074927BDBF7300353276 /* config.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A1300BB127BAAFFC005CDD06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1300BB027BAAFFC005CDD06 /* AzureIoTSwiftSample.app */,
+				A1300BB627BAAFFC005CDD06 /* AzureIoTSwiftSample.app */,
+				A1300BBD27BAAFFC005CDD06 /* Tests iOS.xctest */,
+				A1300BC927BAAFFC005CDD06 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1300BB727BAAFFC005CDD06 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				A1300BB827BAAFFC005CDD06 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		A1300BC027BAAFFC005CDD06 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A1300BC127BAAFFC005CDD06 /* Tests_iOS.swift */,
+				A1300BC327BAAFFC005CDD06 /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		A1300BCC27BAAFFC005CDD06 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				A1300BCD27BAAFFC005CDD06 /* Tests_macOS.swift */,
+				A1300BCF27BAAFFC005CDD06 /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		A1A4074627BDBCBD00353276 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1300BAF27BAAFFC005CDD06 /* AzureIoTSwiftSample (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1300BD927BAAFFC005CDD06 /* Build configuration list for PBXNativeTarget "AzureIoTSwiftSample (iOS)" */;
+			buildPhases = (
+				A1300BAC27BAAFFC005CDD06 /* Sources */,
+				A1300BAD27BAAFFC005CDD06 /* Frameworks */,
+				A1300BAE27BAAFFC005CDD06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AzureIoTSwiftSample (iOS)";
+			packageProductDependencies = (
+				A1300BE927BAB491005CDD06 /* AzureSDKForCSwift */,
+				A1300BEC27BAB52C005CDD06 /* MQTT */,
+				A1A4074727BDBCBD00353276 /* CAzureSDKForCSwift */,
+			);
+			productName = "AzureIoTSwiftSample (iOS)";
+			productReference = A1300BB027BAAFFC005CDD06 /* AzureIoTSwiftSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1300BB527BAAFFC005CDD06 /* AzureIoTSwiftSample (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1300BDC27BAAFFC005CDD06 /* Build configuration list for PBXNativeTarget "AzureIoTSwiftSample (macOS)" */;
+			buildPhases = (
+				A1300BB227BAAFFC005CDD06 /* Sources */,
+				A1300BB327BAAFFC005CDD06 /* Frameworks */,
+				A1300BB427BAAFFC005CDD06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AzureIoTSwiftSample (macOS)";
+			productName = "AzureIoTSwiftSample (macOS)";
+			productReference = A1300BB627BAAFFC005CDD06 /* AzureIoTSwiftSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1300BBC27BAAFFC005CDD06 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1300BDF27BAAFFC005CDD06 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				A1300BB927BAAFFC005CDD06 /* Sources */,
+				A1300BBA27BAAFFC005CDD06 /* Frameworks */,
+				A1300BBB27BAAFFC005CDD06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1300BBF27BAAFFC005CDD06 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = A1300BBD27BAAFFC005CDD06 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A1300BC827BAAFFC005CDD06 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1300BE227BAAFFC005CDD06 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				A1300BC527BAAFFC005CDD06 /* Sources */,
+				A1300BC627BAAFFC005CDD06 /* Frameworks */,
+				A1300BC727BAAFFC005CDD06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1300BCB27BAAFFC005CDD06 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = A1300BC927BAAFFC005CDD06 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1300BA427BAAFFB005CDD06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A1300BAF27BAAFFC005CDD06 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					A1300BB527BAAFFC005CDD06 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					A1300BBC27BAAFFC005CDD06 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A1300BAF27BAAFFC005CDD06;
+					};
+					A1300BC827BAAFFC005CDD06 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A1300BB527BAAFFC005CDD06;
+					};
+				};
+			};
+			buildConfigurationList = A1300BA727BAAFFB005CDD06 /* Build configuration list for PBXProject "AzureIoTSwiftSample" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1300BA327BAAFFB005CDD06;
+			packageReferences = (
+				A1300BE827BAB491005CDD06 /* XCRemoteSwiftPackageReference "azure-sdk-for-c-swift" */,
+				A1300BEB27BAB52C005CDD06 /* XCRemoteSwiftPackageReference "swift-mqtt" */,
+			);
+			productRefGroup = A1300BB127BAAFFC005CDD06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1300BAF27BAAFFC005CDD06 /* AzureIoTSwiftSample (iOS) */,
+				A1300BB527BAAFFC005CDD06 /* AzureIoTSwiftSample (macOS) */,
+				A1300BBC27BAAFFC005CDD06 /* Tests iOS */,
+				A1300BC827BAAFFC005CDD06 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1300BAE27BAAFFC005CDD06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1300BF327BAF96E005CDD06 /* certs in Resources */,
+				A1300BD527BAAFFC005CDD06 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1300BB427BAAFFC005CDD06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1300BD627BAAFFC005CDD06 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1300BBB27BAAFFC005CDD06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1300BC727BAAFFC005CDD06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1300BAC27BAAFFC005CDD06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1300BD327BAAFFC005CDD06 /* ContentView.swift in Sources */,
+				A1300BD127BAAFFC005CDD06 /* AzureIoTSwiftSampleApp.swift in Sources */,
+				A1A4074427BDAA3000353276 /* DemoIoTClient.swift in Sources */,
+				A1A4074A27BDBF7300353276 /* config.swift in Sources */,
+				A1300BE627BAB3E5005CDD06 /* AzureIoTSwiftViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1300BB227BAAFFC005CDD06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1300BD427BAAFFC005CDD06 /* ContentView.swift in Sources */,
+				A1300BD227BAAFFC005CDD06 /* AzureIoTSwiftSampleApp.swift in Sources */,
+				A1A4074527BDAA3000353276 /* DemoIoTClient.swift in Sources */,
+				A1A4074B27BDBF7300353276 /* config.swift in Sources */,
+				A1300BE727BAB3E5005CDD06 /* AzureIoTSwiftViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1300BB927BAAFFC005CDD06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1300BC427BAAFFC005CDD06 /* Tests_iOSLaunchTests.swift in Sources */,
+				A1300BC227BAAFFC005CDD06 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1300BC527BAAFFC005CDD06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1300BD027BAAFFC005CDD06 /* Tests_macOSLaunchTests.swift in Sources */,
+				A1300BCE27BAAFFC005CDD06 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1300BBF27BAAFFC005CDD06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1300BAF27BAAFFC005CDD06 /* AzureIoTSwiftSample (iOS) */;
+			targetProxy = A1300BBE27BAAFFC005CDD06 /* PBXContainerItemProxy */;
+		};
+		A1300BCB27BAAFFC005CDD06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1300BB527BAAFFC005CDD06 /* AzureIoTSwiftSample (macOS) */;
+			targetProxy = A1300BCA27BAAFFC005CDD06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A1300BD727BAAFFC005CDD06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1300BD827BAAFFC005CDD06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A1300BDA27BAAFFC005CDD06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danelikethedog.AzureIoTSwiftSample;
+				PRODUCT_NAME = AzureIoTSwiftSample;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1300BDB27BAAFFC005CDD06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danelikethedog.AzureIoTSwiftSample;
+				PRODUCT_NAME = AzureIoTSwiftSample;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1300BDD27BAAFFC005CDD06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danelikethedog.AzureIoTSwiftSample;
+				PRODUCT_NAME = AzureIoTSwiftSample;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A1300BDE27BAAFFC005CDD06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danelikethedog.AzureIoTSwiftSample;
+				PRODUCT_NAME = AzureIoTSwiftSample;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A1300BE027BAAFFC005CDD06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danelikethedog.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AzureIoTSwiftSample (iOS)";
+			};
+			name = Debug;
+		};
+		A1300BE127BAAFFC005CDD06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danelikethedog.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AzureIoTSwiftSample (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1300BE327BAAFFC005CDD06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danelikethedog.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "AzureIoTSwiftSample (macOS)";
+			};
+			name = Debug;
+		};
+		A1300BE427BAAFFC005CDD06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danelikethedog.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "AzureIoTSwiftSample (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1300BA727BAAFFB005CDD06 /* Build configuration list for PBXProject "AzureIoTSwiftSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1300BD727BAAFFC005CDD06 /* Debug */,
+				A1300BD827BAAFFC005CDD06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1300BD927BAAFFC005CDD06 /* Build configuration list for PBXNativeTarget "AzureIoTSwiftSample (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1300BDA27BAAFFC005CDD06 /* Debug */,
+				A1300BDB27BAAFFC005CDD06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1300BDC27BAAFFC005CDD06 /* Build configuration list for PBXNativeTarget "AzureIoTSwiftSample (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1300BDD27BAAFFC005CDD06 /* Debug */,
+				A1300BDE27BAAFFC005CDD06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1300BDF27BAAFFC005CDD06 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1300BE027BAAFFC005CDD06 /* Debug */,
+				A1300BE127BAAFFC005CDD06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1300BE227BAAFFC005CDD06 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1300BE327BAAFFC005CDD06 /* Debug */,
+				A1300BE427BAAFFC005CDD06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A1300BE827BAB491005CDD06 /* XCRemoteSwiftPackageReference "azure-sdk-for-c-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danelikethedog/azure-sdk-for-c-swift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		A1300BEB27BAB52C005CDD06 /* XCRemoteSwiftPackageReference "swift-mqtt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/matsune/swift-mqtt.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A1300BE927BAB491005CDD06 /* AzureSDKForCSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1300BE827BAB491005CDD06 /* XCRemoteSwiftPackageReference "azure-sdk-for-c-swift" */;
+			productName = AzureSDKForCSwift;
+		};
+		A1300BEC27BAB52C005CDD06 /* MQTT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1300BEB27BAB52C005CDD06 /* XCRemoteSwiftPackageReference "swift-mqtt" */;
+			productName = MQTT;
+		};
+		A1A4074727BDBCBD00353276 /* CAzureSDKForCSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1300BE827BAB491005CDD06 /* XCRemoteSwiftPackageReference "azure-sdk-for-c-swift" */;
+			productName = CAzureSDKForCSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A1300BA427BAAFFB005CDD06 /* Project object */;
+}
