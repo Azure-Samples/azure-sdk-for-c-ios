@@ -20,7 +20,6 @@
 		A1300BE627BAB3E5005CDD06 /* AzureIoTSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1300BE527BAB3E5005CDD06 /* AzureIoTSwiftViewController.swift */; };
 		A1300BE727BAB3E5005CDD06 /* AzureIoTSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1300BE527BAB3E5005CDD06 /* AzureIoTSwiftViewController.swift */; };
 		A1300BED27BAB52C005CDD06 /* MQTT in Frameworks */ = {isa = PBXBuildFile; productRef = A1300BEC27BAB52C005CDD06 /* MQTT */; };
-		A1300BF327BAF96E005CDD06 /* certs in Resources */ = {isa = PBXBuildFile; fileRef = A1300BF227BAF96E005CDD06 /* certs */; };
 		A1A4074427BDAA3000353276 /* DemoIoTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A4074327BDAA3000353276 /* DemoIoTClient.swift */; };
 		A1A4074527BDAA3000353276 /* DemoIoTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A4074327BDAA3000353276 /* DemoIoTClient.swift */; };
 		A1A4074A27BDBF7300353276 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A4074927BDBF7300353276 /* config.swift */; };
@@ -304,7 +303,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1300BF327BAF96E005CDD06 /* certs in Resources */,
 				A1300BD527BAAFFC005CDD06 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
