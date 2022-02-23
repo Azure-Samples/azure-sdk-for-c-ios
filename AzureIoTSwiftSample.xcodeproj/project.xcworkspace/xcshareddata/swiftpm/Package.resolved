@@ -3,10 +3,10 @@
     "pins": [
       {
         "package": "AzureSDKForCSwift",
-        "repositoryURL": "https://github.com/danelikethedog/azure-sdk-for-c-swift",
+        "repositoryURL": "https://github.com/Azure-Samples/azure-sdk-for-c-swift",
         "state": {
           "branch": "main",
-          "revision": "ac277a7bcf64a8ffb678c0cbac442f39bfa59b74",
+          "revision": "c6c0b5cefe354ed62389391897bf8b91a66ad9d2",
           "version": null
         }
       },
