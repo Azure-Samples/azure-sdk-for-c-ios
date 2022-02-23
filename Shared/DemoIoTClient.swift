@@ -33,22 +33,25 @@ public class DemoProvisioningClient: MQTTClientDelegate {
     {
         AzProvClient = AzureIoTDeviceProvisioningClient(idScope: idScope, registrationID: registrationID)
 
-        let caCert: [UInt8] = Array(myBaltimore.utf8)
+        let caCert: [UInt8] = Array(baltimoreRootCert.utf8)
         let clientCert: [UInt8] = Array(myCert.utf8)
         let keyCert: [UInt8] = Array(myCertKey.utf8)
-        let tlsConfiguration = try! TLSConfiguration.forClient(minimumTLSVersion: .tlsv11,
-                                                               maximumTLSVersion: .tlsv12,
-                                                               certificateVerification: .noHostnameVerification,
-                                                               trustRoots: NIOSSLTrustRoots.certificates(NIOSSLCertificate.fromPEMBytes(caCert)),
-                                                               certificateChain: NIOSSLCertificate.fromPEMBytes(clientCert).map { .certificate($0) },
-                                                               privateKey: .privateKey(.init(bytes: keyCert, format: NIOSSLSerializationFormats.pem)))
-        print("Client ID: \(AzProvClient.GetDeviceProvisionigClientID())")
+        
+        var tlsConfiguration = TLSConfiguration.makeClientConfiguration()
+        tlsConfiguration.minimumTLSVersion = .tlsv11
+        tlsConfiguration.maximumTLSVersion = .tlsv12
+        tlsConfiguration.trustRoots = try! NIOSSLTrustRoots.certificates(NIOSSLCertificate.fromPEMBytes(caCert))
+        tlsConfiguration.certificateVerification = .noHostnameVerification
+        tlsConfiguration.certificateChain = try! NIOSSLCertificate.fromPEMBytes(clientCert).map { .certificate($0) }
+        tlsConfiguration.privateKey = try! NIOSSLPrivateKeySource.privateKey(NIOSSLPrivateKey(bytes: keyCert, format: .pem))
+
+        print("Client ID: \(AzProvClient.GetDeviceProvisioningClientID())")
         print("Username: \(AzProvClient.GetDeviceProvisioningUsername())")
 
         mqttClient = MQTTClient(
             host: "global.azure-devices-provisioning.net",
             port: 8883,
-            clientID: AzProvClient.GetDeviceProvisionigClientID(),
+            clientID: AzProvClient.GetDeviceProvisioningClientID(),
             cleanSession: true,
             keepAlive: 30,
             username: AzProvClient.GetDeviceProvisioningUsername(),
@@ -150,15 +153,18 @@ class DemoHubClient: MQTTClientDelegate {
     {
         AzHubClient = AzureIoTHubClient(iothubUrl: iothub, deviceId: deviceId)
 
-        let caCert: [UInt8] = Array(myBaltimore.utf8)
+        let caCert: [UInt8] = Array(baltimoreRootCert.utf8)
         let clientCert: [UInt8] = Array(myCert.utf8)
         let keyCert: [UInt8] = Array(myCertKey.utf8)
-        let tlsConfiguration = try! TLSConfiguration.forClient(minimumTLSVersion: .tlsv11,
-                                                               maximumTLSVersion: .tlsv12,
-                                                               certificateVerification: .noHostnameVerification,
-                                                               trustRoots: NIOSSLTrustRoots.certificates(NIOSSLCertificate.fromPEMBytes(caCert)),
-                                                               certificateChain: NIOSSLCertificate.fromPEMBytes(clientCert).map { .certificate($0) },
-                                                               privateKey: .privateKey(.init(bytes: keyCert, format: NIOSSLSerializationFormats.pem)))
+
+        var tlsConfiguration = TLSConfiguration.makeClientConfiguration()
+        tlsConfiguration.minimumTLSVersion = .tlsv11
+        tlsConfiguration.maximumTLSVersion = .tlsv12
+        tlsConfiguration.trustRoots = try! NIOSSLTrustRoots.certificates(NIOSSLCertificate.fromPEMBytes(caCert))
+        tlsConfiguration.certificateVerification = .noHostnameVerification
+        tlsConfiguration.certificateChain = try! NIOSSLCertificate.fromPEMBytes(clientCert).map { .certificate($0) }
+        tlsConfiguration.privateKey = try! NIOSSLPrivateKeySource.privateKey(NIOSSLPrivateKey(bytes: keyCert, format: .pem))
+        
         mqttClient = MQTTClient(
             host: iothub,
             port: 8883,
@@ -233,15 +239,15 @@ class DemoHubClient: MQTTClientDelegate {
     public func subscribeToAzureIoTHubFeatures() {
         print("[IoT Hub] Subscribing to IoT Hub Features")
         // Methods
-        let methodsTopic = AzHubClient.GetMethodsSubscribeTopic()
+        let methodsTopic = AzHubClient.GetCommandsSubscribeTopic()
         mqttClient.subscribe(topic: methodsTopic, qos: QOS.1)
         
         // Twin Response
-        let twinResponseTopic = AzHubClient.GetTwinResponseSubscribeTopic()
+        let twinResponseTopic = AzHubClient.GetPropertiesResponseSubscribeTopic()
         mqttClient.subscribe(topic: twinResponseTopic, qos: QOS.1)
 
         // Twin Patch
-        let twinPatchTopic = AzHubClient.GetTwinPatchSubscribeTopic()
+        let twinPatchTopic = AzHubClient.GetPropertiesWritablePatchSubscribeTopic()
         mqttClient.subscribe(topic: twinPatchTopic, qos: QOS.1)
 
     }
